@@ -3,133 +3,118 @@
 <head>
   <meta charset="UTF-8" />
   <title>Raja Anthonysamy – Data Scientist</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
   <style>
     body {
+      font-family: 'Roboto Mono', monospace;
+      background-color: #0f1117;
+      color: #f8f8f2;
       margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background-color: #0e0e1a;
-      color: #f0f0f0;
-    }
-
-    .hero {
-      background-image: url('https://images.unsplash.com/photo-1555949963-aa79dcee981d?auto=format&fit=crop&w=1950&q=80');
-      background-size: cover;
-      background-position: center;
-      padding: 100px 20px;
-      text-align: center;
-      color: white;
-    }
-
-    .hero h1 {
-      font-size: 3em;
-      margin-bottom: 0.2em;
-    }
-
-    .hero p {
-      font-size: 1.2em;
-      opacity: 0.9;
-    }
-
-    .section {
-      padding: 50px 20px;
-      max-width: 1000px;
+      padding: 20px;
+      max-width: 960px;
       margin: auto;
     }
 
-    .section h2 {
-      font-size: 2em;
-      color: #36f2b1;
-      margin-bottom: 20px;
-    }
-
-    .grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .card {
-      background-color: #1a1a2e;
-      padding: 20px;
-      border-radius: 10px;
-      flex: 1 1 300px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    }
-
-    .card img {
-      width: 100%;
-      border-radius: 6px;
-      margin-bottom: 15px;
-    }
-
-    .footer {
+    header {
       text-align: center;
+      padding-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #50fa7b;
+    }
+
+    h2 {
+      color: #8be9fd;
+      border-bottom: 1px solid #444;
+      padding-bottom: 5px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    .code-block {
+      background-color: #282a36;
+      padding: 15px;
+      border-radius: 5px;
       font-size: 0.9em;
-      color: #888;
-      padding: 20px;
-      border-top: 1px solid #333;
-      margin-top: 40px;
+      overflow-x: auto;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
     }
 
     a {
-      color: #66eaff;
+      color: #ff79c6;
       text-decoration: none;
     }
 
     a:hover {
       text-decoration: underline;
     }
+
+    .footer {
+      text-align: center;
+      font-size: 0.8em;
+      color: #888;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
-  <div class="hero">
+  <header>
     <h1>Raja Anthonysamy</h1>
-    <p>AI/ML Engineer & Data Scientist | Google Cloud ML Specialist</p>
-  </div>
+    <p>AI/ML Engineer & Data Scientist | GCP Specialist</p>
+  </header>
 
-  <div class="section">
-    <h2>Specializations</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*HcNpdJxeNITfGPsF2oBaJg.jpeg" alt="Machine Learning">
-        <p><strong>Machine Learning & Deep Learning</strong><br>TensorFlow, PyTorch, CNNs, Transformers</p>
-      </div>
-      <div class="card">
-        <img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/06/featured-image-3.jpg" alt="Cloud AI">
-        <p><strong>Cloud ML Solutions</strong><br>Vertex AI, BigQuery ML, MLOps Pipelines</p>
-      </div>
-      <div class="card">
-        <img src="https://cdn-images-1.medium.com/max/1600/1*T64OgjLX8cuVE2PhWMpBJg.png" alt="Data Engineering">
-        <p><strong>Data Engineering</strong><br>Data pipelines, ETL, Spark, Airflow</p>
-      </div>
+  <section>
+    <h2>About Me</h2>
+    <p>I design and implement scalable machine learning systems using Google Cloud AI services. With over 7.5 years of experience, I specialize in deep learning, image processing, and intelligent applications.</p>
+  </section>
+
+  <section>
+    <h2>Core Skills</h2>
+    <ul>
+      <li>Python, TensorFlow, PyTorch</li>
+      <li>Google Cloud AI/ML Services (Vertex AI, AutoML, BigQuery ML)</li>
+      <li>Model Deployment, MLOps, CI/CD for ML</li>
+      <li>Computer Vision, NLP, GenAI Integration</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Sample Code</h2>
+    <div class="code-block">
+<pre><code># Predict using a trained model
+import tensorflow as tf
+model = tf.keras.models.load_model('model.h5')
+prediction = model.predict(input_data)</code></pre>
     </div>
-  </div>
+  </section>
 
-  <div class="section">
-    <h2>Featured Projects</h2>
-    <div class="grid">
-      <div class="card">
-        <p><strong>Smart Bulk Uploader</strong><br>OpenCSV + Spring Boot service for automated charge point uploads.</p>
-      </div>
-      <div class="card">
-        <p><strong>PySide6 GUI Automation</strong><br>Autofills user forms across desktop apps using Pywinauto.</p>
-      </div>
-      <div class="card">
-        <p><strong>GenAI Content Generator</strong><br>Built with Google PaLM API, creates blogs and reports intelligently.</p>
-      </div>
-    </div>
-  </div>
+  <section>
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>ChargePoint Bulk Uploader</strong> – Spring Boot + OpenCSV automation</li>
+      <li><strong>GCP ML Pipeline</strong> – Automated retraining & deployment with Vertex AI</li>
+      <li><strong>PySide6 Automation</strong> – Cross-app GUI data autofill using `pywinauto`</li>
+    </ul>
+  </section>
 
-  <div class="section">
-    <h2>Let's Connect</h2>
-    <p>Email: <a href="mailto:raja.data@gmail.com">raja.data@gmail.com</a> | GitHub: <a href="https://github.com/rajaanthonysamy">rajaanthonysamy</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/rajaanthonysamy">linkedin.com/in/rajaanthonysamy</a></p>
-  </div>
+  <section>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:raja.data@gmail.com">raja.data@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/rajaanthonysamy" target="_blank">rajaanthonysamy</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/rajaanthonysamy" target="_blank">in/rajaanthonysamy</a></p>
+  </section>
 
   <div class="footer">
-    <p>&copy; 2025 Raja Anthonysamy. Designed for Data Science impact.</p>
+    <p>Made with 💻 and ☕ by Raja Anthonysamy</p>
   </div>
 </body>
 </html>
