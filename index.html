@@ -2,63 +2,124 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Raja Anthonysamy – Data Scientist</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Raja Anthonysamy – Data Scientist Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 700px; margin: auto; padding: 2rem; }
-    h1, h2 { text-align: center; }
-    .tech-icons img { margin: 0 5px; vertical-align: middle; }
-    .project { padding: 1rem 0; }
-    .project a { text-decoration: none; color: #0366d6; }
-    .certs img { margin: 5px; height: 80px; }
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8f9fa;
+      color: #343a40;
+    }
+    header {
+      background-color: #343a40;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    .section {
+      padding: 2rem 1rem;
+      max-width: 960px;
+      margin: auto;
+    }
+    .section h2 {
+      text-align: center;
+      color: #212529;
+      margin-bottom: 1rem;
+    }
+    .tech-icons, .certs, .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .tech-icons img, .certs img {
+      height: 60px;
+      transition: transform 0.3s ease;
+    }
+    .tech-icons img:hover, .certs img:hover {
+      transform: scale(1.1);
+    }
+    .project {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 420px;
+    }
+    .project a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #dee2e6;
+    }
   </style>
 </head>
 <body>
-  <h1>👋 Hi, I'm Raja Anthonysamy</h1>
-  <p style="text-align:center;">
-    <strong>Data Scientist</strong> from Tamil Nadu, India.  
-    I collaborate on **ML/AI projects**, love **Python**, and enjoy building real-world solutions.
-  </p>
+  <header>
+    <h1>👋 Hi, I'm Raja Anthonysamy</h1>
+    <p>Data Scientist | ML/AI Enthusiast | Real-World Problem Solver</p>
+    <p>
+      <a href="https://www.linkedin.com/in/raja-anthonysamy-654841171/" target="_blank">
+        <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin" alt="LinkedIn">
+      </a>
+    </p>
+  </header>
 
-  <h2>📫 Connect with Me</h2>
-  <p align="center">
-    <a href="https://www.linkedin.com/in/raja-anthonysamy-654841171/">
-      <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin" alt="LinkedIn">
-    </a>
-  </p>
+  <section class="section">
+    <h2>🛠️ Technologies I Use</h2>
+    <div class="tech-icons">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+    </div>
+  </section>
 
-  <h2>🛠 Tech Stack</h2>
-  <p class="tech-icons" align="center">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="40">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" width="40">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="40">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" width="40">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="40">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="40">
-  </p>
+  <section class="section">
+    <h2>💼 Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Health Insurance Premium Predictor</h3>
+        <p>Predicts health insurance costs with user inputs and ML models.</p>
+        <a href="https://mlhealthinsurancepremium.streamlit.app/" target="_blank">▶️ Live Demo</a>
+      </div>
+      <div class="project">
+        <h3>Finance Credit Risk Assessment</h3>
+        <p>Analyzes credit risk using NLP and ML classification algorithms.</p>
+        <a href="https://financecreditrisk.streamlit.app/" target="_blank">▶️ Live Demo</a>
+      </div>
+    </div>
+  </section>
 
-  <h2>💼 Projects</h2>
-  <div class="project">
-    <strong>Health Insurance Premium Predictor</strong> • Predicts and explains insurance costs.<br>
-    <a href="https://mlhealthinsurancepremium.streamlit.app/" target="_blank">▶️ Live Demo</a>
-  </div>
-  <div class="project">
-    <strong>Finance Credit Risk Assessment</strong> • Analyzes risk using ML & NLP.<br>
-    <a href="https://financecreditrisk.streamlit.app/" target="_blank">▶️ Live Demo</a>
-  </div>
+  <section class="section">
+    <h2>🎓 Certifications & 🏆 Achievements</h2>
+    <div class="certs">
+      <img src="https://github.com/Rajaanthonysamy/URLS/blob/main/Raja%20A%20(839491)%20-%20Winner.jpg" alt="Hackathon Winner">
+      <img src="https://github.com/Rajaanthonysamy/URLS/blob/main/python_page-0001.jpg" alt="Python Certificate">
+      <img src="https://github.com/Rajaanthonysamy/URLS/blob/main/Sql_page-0001.jpg" alt="SQL Certificate">
+      <img src="https://github.com/Rajaanthonysamy/URLS/blob/main/DataScience_page-0001.jpg" alt="Data Science Certificate">
+    </div>
+  </section>
 
-  <h2>🎓 Certifications & 🏆 Achievements</h2>
-  <div class="certs" align="center">
-    <img src="https://github.com/Rajaanthonysamy/URLS/blob/main/Raja%20A%20(839491)%20-%20Winner.jpg" alt="Hackathon Winner">
-    <img src="https://github.com/Rajaanthonysamy/URLS/blob/main/python_page-0001.jpg" alt="Python Cert">
-    <img src="https://github.com/Rajaanthonysamy/URLS/blob/main/Sql_page-0001.jpg" alt="SQL Cert">
-    <img src="https://github.com/Rajaanthonysamy/URLS/blob/main/DataScience_page-0001.jpg" alt="Data Science Cert">
-  </div>
-
-  <footer style="text-align:center; padding-top:2rem;">
+  <footer>
     <hr>
-    <p>© 2025 Raja Anthonysamy — Hosted with ❤️ using GitHub Pages</p>
+    <p>© 2025 Raja Anthonysamy &mdash; Built with ❤️ using GitHub Pages</p>
   </footer>
 </body>
 </html>
